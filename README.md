@@ -1,91 +1,96 @@
-AIConverter
-AIConverter is a Python-based library for converting various file formats using artificial intelligence. This library includes 50+ converters that use AI algorithms to convert files in a wide range of formats.
+# AIConverter Web Application
 
-Features
-Conversion of various file formats using AI algorithms
-Supports 50+ file formats for conversion
-Easy-to-use Python-based library
-Well-documented code for easy contribution
-Open-source project with active community support
-Installation
-To install AIConverter, run the following command:
+Create a web application using Next.js and Python to provide a user-friendly interface for the AIConverter library. This application allows users to upload files and convert them to various formats using the AIConverter Python library.
 
-bash
-Copy code
-pip install aiconverter
-Usage
-The following code example demonstrates how to use AIConverter to convert a file:
+## Prerequisites
 
-python
-Copy code
-from aiconverter import AIConverter
+Ensure you have the following installed on your system:
 
-converter = AIConverter()
-converter.convert("input_file.jpg", "output_file.pdf")
-This code will convert the input file from JPEG format to PDF format using AI algorithms.
+-Node.js
+-npm or yarn
+-Python 3.x
+-Pip
 
-Contributing
+## Project Setup
+
+1- Create a new Next.js project:
+```bash
+git clone https://github.com/salmanghouridev/aiconverter.git
+
+```bash
+npm install
+
+```bash
+npm run dev
+
+##Contributing
 We welcome contributions from anyone interested in improving AIConverter. If you are interested in contributing, please follow these steps:
 
-Fork the repository and create a new branch.
-Make your changes and add appropriate tests.
-Run the tests and ensure they all pass.
-Submit a pull request with your changes.
+1- Fork the repository and create a new branch.
+2- Make your changes and add appropriate tests.
+3- Run the tests and ensure they all pass.
+4- Submit a pull request with your changes.
+
 Please ensure your code is well-documented and follows the existing coding style. We also recommend discussing your changes with the community before submitting a pull request.
 
-Supported Formats
-AIConverter currently supports the following file formats for conversion:
 
-JPEG
-PNG
-BMP
-GIF
-TIFF
-PDF
-DOCX
-XLSX
-PPTX
-CSV
-TXT
-MP3
-WAV
-OGG
-FLAC
-MP4
-AVI
-MKV
-WEBM
-MOV
-WMV
-FLV
-3GP
-SVG
-EPS
-AI
-PSD
-CDR
-DWG
-DXF
-HTML
-XML
-JSON
-YAML
-SQL
-ZIP
-RAR
-7Z
-TAR
-GZ
-BZ2
-DEB
-RPM
-APK
-IPA
-EXE
-MSI
-DMG
-ISO
+##Supported Formats and Converters
+
+AIConverter currently supports the following file formats for conversion and their corresponding converter class names:
+
+JPEG (JpegConverter)
+PNG (PngConverter)
+BMP (BmpConverter)
+GIF (GifConverter)
+TIFF (TiffConverter)
+PDF (PdfConverter)
+DOCX (DocxConverter)
+XLSX (XlsxConverter)
+PPTX (PptxConverter)
+CSV (CsvConverter)
+TXT (TxtConverter)
+MP3 (Mp3Converter)
+WAV (WavConverter)
+OGG (OggConverter)
+FLAC (FlacConverter)
+MP4 (Mp4Converter)
+AVI (AviConverter)
+MKV (MkvConverter)
+WEBM (WebmConverter)
+MOV (MovConverter)
+WMV (WmvConverter)
+FLV (FlvConverter)
+3GP (3gpConverter)
+SVG (SvgConverter)
+EPS (EpsConverter)
+AI (AiConverter)
+PSD (PsdConverter)
+CDR (CdrConverter)
+DWG (DwgConverter)
+DXF (DxfConverter)
+HTML (HtmlConverter)
+XML (XmlConverter)
+JSON (JsonConverter)
+YAML (YamlConverter)
+SQL (SqlConverter)
+ZIP (ZipConverter)
+RAR (RarConverter)
+7Z (7zConverter)
+TAR (TarConverter)
+GZ (GzConverter)
+BZ2 (Bz2Converter)
+DEB (DebConverter)
+RPM (RpmConverter)
+APK (ApkConverter)
+IPA (IpaConverter)
+EXE (ExeConverter)
+MSI (MsiConverter)
+DMG (DmgConverter)
+ISO (IsoConverter)
 If you would like to add support for a new file format, please submit a pull request with the necessary changes.
 
-License
+##License
 AIConverter is licensed under the MIT License. See LICENSE for more information.
+
+
+
