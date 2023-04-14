@@ -26,13 +26,13 @@ npm install
 npm run dev
 ```
 
-##Contributing
+## Contributing
 We welcome contributions from anyone interested in improving AIConverter. If you are interested in contributing, please follow these steps:
 
-1- Fork the repository and create a new branch.
-2- Make your changes and add appropriate tests.
-3- Run the tests and ensure they all pass.
-4- Submit a pull request with your changes.
+- Fork the repository and create a new branch.
+- Make your changes and add appropriate tests.
+- Run the tests and ensure they all pass.
+- Submit a pull request with your changes.
 
 Please ensure your code is well-documented and follows the existing coding style. We also recommend discussing your changes with the community before submitting a pull request.
 
