@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footerportion from './Footerportion';
 
 const HtmlToReactConverter = () => {
   const [htmlInput, setHtmlInput] = useState('');
@@ -25,15 +26,15 @@ export default MyComponent;`;
 
   const nodeToJSX = (node, indent = '') => {
     const childNodes = Array.from(node.childNodes);
-
+  
     if (childNodes.length === 0) {
       return '';
     }
-
+  
     return childNodes
       .map((child) => {
         if (child.nodeType === Node.TEXT_NODE) {
-          return indent + child.textContent.trim();
+          return indent + child.textContent.replace(/[{}<>]/g, (match) => `{'${match === '<' ? '&lt;' : match === '>' ? '&gt;' : match}'}`).trim();
         } else if (child.nodeType === Node.ELEMENT_NODE) {
           const tagName = child.tagName.toLowerCase();
           const attributes = Array.from(child.attributes)
@@ -43,7 +44,7 @@ export default MyComponent;`;
             })
             .join(' ');
           const children = nodeToJSX(child, indent + '  ');
-
+  
           return (
             `${indent}<${tagName}${attributes ? ' ' + attributes : ''}>` +
             (children ? `\n${children}\n${indent}` : '') +
@@ -56,15 +57,19 @@ export default MyComponent;`;
       .filter(Boolean)
       .join('\n');
   };
+  
 
   const handleConvertClick = () => {
     setReactOutput(convertHtmlToReact(htmlInput));
   };
 
   return (
+    <>
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">HTML to React Converter</h1>
+        
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-2">HTML to React Converter</h1>
+        <h1 className="text-md font-semibold text-center text-blue-500 mb-8">(Open Source Porject)</h1>
         <div className="relative px-4 py-10 bg-white shadow-md sm:rounded-3xl sm:p-10">
           <div className="mb-6">
             <label htmlFor="html-input" className="block text-sm font-medium text-gray-700">
@@ -100,6 +105,8 @@ export default MyComponent;`;
         </div>
       </div>
     </div>
+    <Footerportion/>
+    </>
   );
 };
 
