@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
           
-          <a className="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4" href="#MainContent">
+          <Link className="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4" href="#MainContent">
             
             <span className="sr-only">
               Back to top
@@ -21,7 +22,7 @@ const Footer = () => {
               
             </svg>
             
-          </a>
+          </Link>
           
         </div>
         
@@ -70,33 +71,33 @@ const Footer = () => {
               
               <li>
                 
-                <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                   About
-                </a>
+                </Link>
                 
               </li>
               
               <li>
                 
-                <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                   Services
-                </a>
+                </Link>
                 
               </li>
               
               <li>
                 
-                <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                   Projects
-                </a>
+                </Link>
                 
               </li>
               
               <li>
                 
-                <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
+                <Link className="text-gray-700 transition hover:text-gray-700/75" href="/">
                   Blog
-                </a>
+                </Link>
                 
               </li>
               
@@ -107,7 +108,7 @@ const Footer = () => {
         </div>
         
         <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-        Copyright © 2023 ❤️AICONVERTER🤖 by <a href='http://salmanghouri.com/' className='text-blue-500'>salmanghouridev</a>.  All rights reserved.
+        Copyright © 2023 ❤️AICONVERTER🤖 by <Link href='http://salmanghouri.com/' className='text-blue-500'>salmanghouridev</Link>.  All rights reserved.
         </p>
         
       </div>

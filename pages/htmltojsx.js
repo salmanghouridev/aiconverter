@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const htmltojsx = () => {
+const HtmlToJsx = () => {
   const [htmlInput, setHtmlInput] = useState('');
   const [reactOutput, setReactOutput] = useState('');
   const [includeComponentWrapper, setIncludeComponentWrapper] = useState(true);
@@ -123,4 +123,4 @@ onChange={(e) => setIncludeComponentWrapper(e.target.checked)}
 );
 };
 
-export default htmltojsx;
+export default HtmlToJsx;

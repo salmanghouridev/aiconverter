@@ -1,44 +1,45 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
   <>
       <nav aria-label="Site Nav" className="mx-auto flex max-w-3xl items-center justify-between p-4">
       
-      <a href="/" className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100">
+      <Link href="/" className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100">
         
         <span className="sr-only">
           Logo
         </span>
         👋
-      </a>
+      </Link>
       
       <ul className="flex items-center gap-2 text-sm font-medium text-gray-500">
         
         <li className="hidden lg:block">
           
-          <a className="rounded-lg px-3 py-2" href="/">
+          <Link className="rounded-lg px-3 py-2" href="/">
             Home
-          </a>
+          </Link>
           
         </li>
         
         <li>
-          <a className="rounded-lg px-3 py-2" href="">
+          <Link className="rounded-lg px-3 py-2" href="">
             About
-          </a>
+          </Link>
         </li>
        
         <li>
-          <a className="rounded-lg px-3 py-2" href="">
+          <Link className="rounded-lg px-3 py-2" href="">
             Review
-          </a>
+          </Link>
         </li>
 
         
         <li>
           
-          <a className="inline-flex items-center gap-2 rounded-lg px-3 py-2" href="" target="_blank">
+          <Link className="inline-flex items-center gap-2 rounded-lg px-3 py-2" href="" target="_blank">
           Upcomming New 
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4">
               
@@ -46,7 +47,7 @@ const Navbar = () => {
               
             </svg>
             
-          </a>
+          </Link>
           
         </li>
         
