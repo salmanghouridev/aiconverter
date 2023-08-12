@@ -1,17 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-
+import Image from 'next/image'
 const Navbar = () => {
   return (
   <>
      <nav aria-label="Site Nav" className="mx-auto flex max-w-3xl items-center justify-between p-4">
       
-      <Link href="/" className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 text-gray-900 font-bold text-lg">
-        
-        <span className="sr-only">
-          Logo
-        </span>
-        👋
+      <Link href="/" className="inline-flex  items-center justify-center rounded-lg bg-gray-100 text-gray-900 font-bold text-lg">
+      <Image src="/logo.png" alt="Picture of the author" width={80} height={60}  />
       </Link>
       
       <ul className="flex items-center gap-2 text-sm font-medium text-gray-500">
